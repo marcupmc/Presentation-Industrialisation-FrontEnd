@@ -44,26 +44,7 @@ h1{
     color:red;
 }
 
-/*Animtions
-.ng-enter {
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-
-  margin-left: 100%;
+.task-done{
+     opacity: 0.4;
+     filter: alpha(opacity=40); /* For IE8 and earlier */
 }
-
-.ng-enter-active {
-  margin-left: 0;
-}
-
-.ng-leave {
-  -webkit-transition: 1s;
-  transition: 1s;
-
-  margin-left: 0;
-}
-
-.ng-leave-active {
-  margin-left: 100%;
-}
-*/

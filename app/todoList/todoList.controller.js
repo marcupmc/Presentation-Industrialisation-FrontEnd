@@ -4,7 +4,15 @@ TodoList.controller('TodoListCtrl',['$scope',function($scope){
    $scope.listOfTasks=[];
 
    $scope.addTask=function(){
-        $scope.listOfTasks.unshift($scope.currentTask);
+        var newTask={
+            text:$scope.currentTask,
+            done:false
+        }
+        $scope.listOfTasks.unshift(newTask);
         $scope.currentTask="";
    }
+
+   $scope.doneTask=function(task){
+        task.done=true;
+   };
 }]);

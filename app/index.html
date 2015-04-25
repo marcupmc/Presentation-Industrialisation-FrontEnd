@@ -22,10 +22,10 @@
 		</div>
 	</div>
 	<div class="row row-centered" ng-repeat="task in listOfTasks">
-		<div class="well">
+		<div class="well" ng-class="{'task-done':task.done}">
 			<div class="checkbox checkbox-primary">
 				<label>
-					<input type="checkbox"> {{task}}
+					<input type="checkbox" ng-model="task.done"> {{task.text}}
 				</label>
 			</div>
 		</div>
@@ -48,5 +48,7 @@
 <script src="app.js" type="text/javascript"></script>
 <script src="todoList/todoList.module.js" type="text/javascript"></script>
 <script src="todoList/todoList.controller.js" type="text/javascript"></script>
+
+<script src="//localhost:35729/livereload.js"></script>
 </body>
 </html>
