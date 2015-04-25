@@ -12,7 +12,5 @@ TodoList.controller('TodoListCtrl',['$scope',function($scope){
         $scope.currentTask="";
    }
 
-   $scope.doneTask=function(task){
-        task.done=true;
-   };
+
 }]);
