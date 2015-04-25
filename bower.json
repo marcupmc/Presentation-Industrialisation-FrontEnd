@@ -1,0 +1,27 @@
+{
+  "name": "industrialisation",
+  "version": "0.0.0",
+  "homepage": "https://github.com/voisinv/Presentation-FrontEnd",
+  "authors": [
+    "marcgregoire <marc.gregoire1989@gmail.com>"
+  ],
+  "description": "Nice Todo list",
+  "main": "app/index.html",
+  "moduleType": [
+    "node"
+  ],
+  "keywords": [
+    "todolist",
+    "responsive",
+    "meteo"
+  ],
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "angular": "~1.3.15",
+    "bootstrap": "~3.3.4",
+    "bootstrap-material-design": "~0.3.0",
+    "jquery": "~2.1.3",
+    "angular-animate": "~1.3.15"
+  }
+}

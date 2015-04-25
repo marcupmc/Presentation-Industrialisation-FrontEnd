@@ -1,0 +1,21 @@
+{
+  "name": "industrialisation",
+  "version": "1.0.0",
+  "description": "Presentation des outils d'industrialisation",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "grunt-test"
+  },
+  "keywords": [
+    "angularjs",
+    "bower",
+    "grunt",
+    "karma",
+    "protractor"
+  ],
+  "author": "marc gregoire",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "^0.4.5"
+  }
+}
