@@ -2,7 +2,7 @@ TodoList.controller('TodoListCtrl',['$scope',function($scope){
 
    $scope.currentTask="";
    $scope.listOfTasks=[];
-
+   $scope.nbDoneTask=0;
 
    $scope.addTask=function(){
         var newTask=
@@ -25,6 +25,26 @@ TodoList.controller('TodoListCtrl',['$scope',function($scope){
          //Sinon on la remet au debut
             $scope.listOfTasks.unshift(doneTask);
    };
+
+   $scope.deleteTask=function(index){
+        $scope.listOfTasks.splice(index, 1);
+   };
+
+   $scope.calculateDoneTasks=function(){
+        var nbDoneTask = 0;
+        var all= $scope.listOfTasks.length;
+        for(i=0;i<all;i++){
+            if($scope.listOfTasks[i].done){
+                nbDoneTask++;
+            }
+        }
+        $scope.nbDoneTask=nbDoneTask;
+   };
+
+   $scope.$watchCollection("listOfTasks",function(newValue,oldValue){
+        if(newValue===oldValue)return;
+        $scope.calculateDoneTasks();
+   });
 
 
 }]);
