@@ -25,7 +25,7 @@
 		<div class="well" ng-class="{'task-done':task.done}">
 			<div class="checkbox checkbox-primary">
 				<label>
-					<input type="checkbox" ng-model="task.done"> {{task.text}}
+					<input type="checkbox" ng-model="task.done" ng-click="doTask($index)"> {{task.text}}
 				</label>
 			</div>
 		</div>
