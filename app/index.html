@@ -15,19 +15,22 @@
 	</div>
 
 	<div class="row row-centered">
-		<div class="col-xs-8 col-centered">
+		<form>
+			<div class="col-xs-8 col-centered">
 
-			<div class="form-group">
-				<label class="control-label" for="input-what">
-					<h1 class="white">Today I have to</h1>
-				</label>
-				<input ng-model="currentTask" type="text" class="form-control input-main" id="input-what">
+				<div class="form-group">
+					<label class="control-label" for="input-what">
+						<h1 class="white">Today I have to</h1>
+					</label>
+					<input ng-model="currentTask" type="text" class="form-control input-main" id="input-what">
+				</div>
 			</div>
-		</div>
-		<div class="col-xs-4 col-centered button-container">
-			<button ng-disabled="!currentTask" ng-click="addTask()" class="btn btn-primary btn-raised" id="button-add-ask">Do It !</button>
-		</div>
+			<div class="col-xs-4 col-centered button-container">
+				<input type="submit" ng-disabled="!currentTask" ng-click="addTask()" class="btn btn-primary btn-raised" id="button-add-ask" value="Do It !"/>
+			</div>
+		</form>
 	</div>
+
 	<div class="row row-centered" ng-repeat="task in listOfTasks">
 		<div class="well" ng-class="{'task-done':task.done}">
 			<div class="checkbox checkbox-primary">
