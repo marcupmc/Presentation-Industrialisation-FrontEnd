@@ -20,15 +20,24 @@ module.exports = function(grunt) {
                     livereload: 35729
                 },
             },
-        }
+        },
+        karma: {
+                    unit: {
+                        configFile: 'karma.unit.js'
+                    }
+
+                }
     });
 
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-connect');
+    grunt.loadNpmTasks('grunt-karma');
 
 
     grunt.registerTask('serve', [
         'connect',
         'watch:dev'
     ]);
+
+    grunt.registerTask('test-unit',['karma:unit']);
 };

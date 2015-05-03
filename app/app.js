@@ -1,1 +1,1 @@
-var mainApp = angular.module('mainApp',['TodoList','ngAnimate']);
+var mainApp = angular.module('mainApp',['TodoList']);
