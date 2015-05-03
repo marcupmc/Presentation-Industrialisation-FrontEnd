@@ -14,18 +14,6 @@ TodoList.controller('TodoListCtrl',['$scope',function($scope){
         $scope.currentTask="";
    };
 
-   $scope.doTask= function(index){
-        var doneTask  = $scope.listOfTasks[index];
-        //on supprime la tache de la liste
-        $scope.listOfTasks.splice(index, 1);
-        //et on l'ajoute à la fin si c'est une tache finie
-        if(doneTask.done)
-            $scope.listOfTasks.push(doneTask);
-        else
-         //Sinon on la remet au debut
-            $scope.listOfTasks.unshift(doneTask);
-   };
-
    $scope.deleteTask=function(index){
         $scope.listOfTasks.splice(index, 1);
    };
@@ -41,10 +29,10 @@ TodoList.controller('TodoListCtrl',['$scope',function($scope){
         $scope.nbDoneTask=nbDoneTask;
    };
 
-   $scope.$watchCollection("listOfTasks",function(newValue,oldValue){
+   $scope.$watch("listOfTasks",function(newValue,oldValue){
         if(newValue===oldValue)return;
         $scope.calculateDoneTasks();
-   });
+   },true);
 
 
 }]);

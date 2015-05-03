@@ -31,9 +31,9 @@
 		<div class="well" ng-class="{'task-done':task.done}">
 			<div class="checkbox checkbox-primary">
 				<label>
-					<input type="checkbox" ng-model="task.done" ng-click="doTask($index)"> {{task.text}}
+					<input type="checkbox" ng-model="task.done"> {{task.text}}
 				</label>
-				<div class="task-right"><a ng-click="deleteTask($index)" href="javascript:void(0)" class="btn btn-danger btn-fab btn-raised mdi-navigation-close"></a></div>
+				<div class="task-right"><a ng-click="deleteTask($index)" class="pointer"><i class="red mdi-navigation-close"></i></a></div>
 			</div>
 		</div>
 	</div>

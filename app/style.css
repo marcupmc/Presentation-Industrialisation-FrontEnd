@@ -63,5 +63,12 @@ h5{
 
 .task-right{
     float : right;
-    margin-top:-15px;
+}
+
+.red{
+    color:#f44336;
+}
+
+.pointer{
+    cursor:pointer;
 }
