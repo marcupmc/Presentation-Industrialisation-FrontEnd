@@ -20,6 +20,9 @@ describe("Test du controlleur todoList",function(){
         it("la liste contient un element",function(){
             expect($scope.listOfTasks.length).toEqual(1);
         });
+        it("aucune tâche n'a ete realisée",function(){
+            expect($scope.nbDoneTask).toEqual(0);
+        });
 
     });
 
