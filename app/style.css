@@ -9,11 +9,8 @@ body{
 
 }
 
-h1{
-    color:white;
-}
 
-h5{
+.white{
     color:white;
 }
 
@@ -65,5 +62,20 @@ h5{
 
 .task-right{
     float : right;
-    margin-top:-15px;
+}
+
+.red{
+    color:#f44336;
+}
+
+.red:hover{
+    color:#E57373;
+}
+
+.pointer{
+    cursor:pointer;
+}
+
+.done-task{
+    color:#009688;
 }
