@@ -9,8 +9,8 @@
 </head>
 <body ng-app="mainApp">
 <div class="container head-content" ng-controller="TodoListCtrl">
-	<div class="row row-centered text-center default-height">
-		<h5 ng-show="listOfTasks.length">You have done {{nbDoneTask}} of your <span class="badge">{{listOfTasks.length}}</span> tasks.</h5>
+	<div class="row row-centered text-center default-height white">
+		<h5 ng-show="listOfTasks.length" ng-class="{'done-task':nbDoneTask===listOfTasks.length}">You have done {{nbDoneTask}} of your <span class="badge">{{listOfTasks.length}}</span> task<span ng-if="listOfTasks.length>1">s</span>.</h5>
 	</div>
 
 	<div class="row row-centered">
@@ -18,7 +18,7 @@
 
 			<div class="form-group">
 				<label class="control-label" for="input-what">
-					<h1>Today I have to</h1>
+					<h1 class="white">Today I have to</h1>
 				</label>
 				<input ng-model="currentTask" type="text" class="form-control input-main" id="input-what">
 			</div>
