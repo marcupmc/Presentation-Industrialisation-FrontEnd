@@ -4,3 +4,23 @@
 [Lien de l'application](http://marcupmc.github.io/Presentation-Industrialisation-FrontEnd/app/)
 
 [Lien de la présentation](http://slides.com/marcgregoire/industrialisationfrontend#/)
+
+#Comment installer le projet ?
+
+Prérequis : 
+Avoir NodeJS 
+Si vous n'avez pas Node -> http://nodejs.com
+
+git clone le projet
+
+npm install pour récupérer les packages node nécessaires
+
+#Les différentes tâches Grunt
+
+LiveReload (pratique pour le dev)
+
+Lancer les tests unitaires
+
+Lancer les tests d'intégration
+
+Lancer les test e2e

@@ -1,218 +1,88 @@
 0 info it worked if it ends with ok
-1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', '-g', 'protractor' ]
+1 verbose cli [ 'node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'grunt-bower-remove',
+1 verbose cli   '--save-dev' ]
 2 info using npm@1.4.28
 3 info using node@v0.10.32
-4 verbose cache add [ 'protractor', null ]
-5 verbose cache add name=undefined spec="protractor" args=["protractor",null]
-6 verbose parsed url { protocol: null,
-6 verbose parsed url   slashes: null,
-6 verbose parsed url   auth: null,
-6 verbose parsed url   host: null,
-6 verbose parsed url   port: null,
-6 verbose parsed url   hostname: null,
-6 verbose parsed url   hash: null,
-6 verbose parsed url   search: null,
-6 verbose parsed url   query: null,
-6 verbose parsed url   pathname: 'protractor',
-6 verbose parsed url   path: 'protractor',
-6 verbose parsed url   href: 'protractor' }
-7 silly lockFile 4f4f4858-protractor protractor
-8 verbose lock protractor /Users/marcgregoire/.npm/4f4f4858-protractor.lock
-9 silly lockFile 4f4f4858-protractor protractor
-10 silly lockFile 4f4f4858-protractor protractor
-11 verbose addNamed [ 'protractor', '' ]
-12 verbose addNamed [ null, '*' ]
-13 silly lockFile 80d5ca5a-protractor protractor@
-14 verbose lock protractor@ /Users/marcgregoire/.npm/80d5ca5a-protractor.lock
-15 silly addNameRange { name: 'protractor', range: '*', hasData: false }
-16 verbose request where is /protractor
-17 verbose request registry https://registry.npmjs.org/
-18 verbose request id 1afd1cce1c0a0fa0
-19 verbose url raw /protractor
-20 verbose url resolving [ 'https://registry.npmjs.org/', './protractor' ]
-21 verbose url resolved https://registry.npmjs.org/protractor
-22 verbose request where is https://registry.npmjs.org/protractor
-23 info trying registry request attempt 1 at 18:56:58
-24 verbose etag "ETXR37D8SAPOZHGVSSW966B9D"
-25 http GET https://registry.npmjs.org/protractor
-26 http 304 https://registry.npmjs.org/protractor
-27 silly registry.get cb [ 304,
-27 silly registry.get   { date: 'Sun, 03 May 2015 16:56:58 GMT',
-27 silly registry.get     via: '1.1 varnish',
-27 silly registry.get     'last-modified': 'Sun, 03 May 2015 16:56:58 GMT',
-27 silly registry.get     'cache-control': 'max-age=60',
-27 silly registry.get     etag: '"ETXR37D8SAPOZHGVSSW966B9D"',
-27 silly registry.get     age: '0',
-27 silly registry.get     connection: 'keep-alive',
-27 silly registry.get     'x-served-by': 'cache-fra1238-FRA',
-27 silly registry.get     'x-cache': 'HIT',
-27 silly registry.get     'x-cache-hits': '1',
-27 silly registry.get     'x-timer': 'S1430672218.402874,VS0,VE569',
-27 silly registry.get     vary: 'Accept' } ]
-28 verbose etag https://registry.npmjs.org/protractor from cache
-29 silly addNameRange number 2 { name: 'protractor', range: '*', hasData: true }
-30 silly addNameRange versions [ 'protractor',
-30 silly addNameRange   [ '0.1.0',
-30 silly addNameRange     '0.1.1',
-30 silly addNameRange     '0.1.2',
-30 silly addNameRange     '0.1.3',
-30 silly addNameRange     '0.2.0',
-30 silly addNameRange     '0.2.1',
-30 silly addNameRange     '0.3.0',
-30 silly addNameRange     '0.4.0',
-30 silly addNameRange     '0.4.1',
-30 silly addNameRange     '0.5.0',
-30 silly addNameRange     '0.6.1',
-30 silly addNameRange     '0.7.0',
-30 silly addNameRange     '0.8.0',
-30 silly addNameRange     '0.9.0',
-30 silly addNameRange     '0.10.0',
-30 silly addNameRange     '0.11.0',
-30 silly addNameRange     '0.12.0',
-30 silly addNameRange     '0.12.1',
-30 silly addNameRange     '0.13.0',
-30 silly addNameRange     '0.14.0',
-30 silly addNameRange     '0.15.0',
-30 silly addNameRange     '0.16.0',
-30 silly addNameRange     '0.16.1',
-30 silly addNameRange     '0.17.0',
-30 silly addNameRange     '0.18.0',
-30 silly addNameRange     '0.18.1',
-30 silly addNameRange     '0.19.0',
-30 silly addNameRange     '0.20.0',
-30 silly addNameRange     '0.20.1',
-30 silly addNameRange     '0.21.0',
-30 silly addNameRange     '0.22.0',
-30 silly addNameRange     '0.23.0',
-30 silly addNameRange     '0.23.1',
-30 silly addNameRange     '0.24.0',
-30 silly addNameRange     '0.24.1',
-30 silly addNameRange     '0.24.2',
-30 silly addNameRange     '1.0.0-rc1',
-30 silly addNameRange     '1.0.0-rc2',
-30 silly addNameRange     '1.0.0-rc3',
-30 silly addNameRange     '1.0.0-rc4',
-30 silly addNameRange     '1.0.0-rc5',
-30 silly addNameRange     '1.0.0-rc6',
-30 silly addNameRange     '1.0.0',
-30 silly addNameRange     '1.1.0',
-30 silly addNameRange     '1.1.1',
-30 silly addNameRange     '1.2.0-beta1',
-30 silly addNameRange     '1.2.0',
-30 silly addNameRange     '1.3.0',
-30 silly addNameRange     '1.3.1',
-30 silly addNameRange     '1.4.0',
-30 silly addNameRange     '1.5.0',
-30 silly addNameRange     '1.6.0',
-30 silly addNameRange     '1.6.1',
-30 silly addNameRange     '1.7.0',
-30 silly addNameRange     '1.8.0',
-30 silly addNameRange     '2.0.0' ] ]
-31 verbose addNamed [ 'protractor', '2.0.0' ]
-32 verbose addNamed [ '2.0.0', '2.0.0' ]
-33 silly lockFile d4a76fd2-protractor-2-0-0 protractor@2.0.0
-34 verbose lock protractor@2.0.0 /Users/marcgregoire/.npm/d4a76fd2-protractor-2-0-0.lock
-35 silly lockFile d4a76fd2-protractor-2-0-0 protractor@2.0.0
-36 silly lockFile d4a76fd2-protractor-2-0-0 protractor@2.0.0
-37 silly lockFile 80d5ca5a-protractor protractor@
-38 silly lockFile 80d5ca5a-protractor protractor@
-39 silly resolved [ { name: 'protractor',
-39 silly resolved     description: 'Webdriver E2E test wrapper for Angular.',
-39 silly resolved     homepage: 'https://github.com/angular/protractor',
-39 silly resolved     keywords:
-39 silly resolved      [ 'angular',
-39 silly resolved        'test',
-39 silly resolved        'testing',
-39 silly resolved        'webdriver',
-39 silly resolved        'webdriverjs',
-39 silly resolved        'selenium' ],
-39 silly resolved     author: { name: 'Julie Ralph', email: 'ju.ralph@gmail.com' },
-39 silly resolved     dependencies:
-39 silly resolved      { request: '~2.36.0',
-39 silly resolved        'selenium-webdriver': '2.45.1',
-39 silly resolved        minijasminenode: '1.1.1',
-39 silly resolved        jasminewd: '1.1.0',
-39 silly resolved        jasminewd2: '0.0.3',
-39 silly resolved        jasmine: '2.1.1',
-39 silly resolved        saucelabs: '~0.1.0',
-39 silly resolved        glob: '~3.2',
-39 silly resolved        'adm-zip': '0.4.4',
-39 silly resolved        optimist: '~0.6.0',
-39 silly resolved        q: '1.0.0',
-39 silly resolved        lodash: '~2.4.1',
-39 silly resolved        'source-map-support': '~0.2.6',
-39 silly resolved        'html-entities': '~1.1.1',
-39 silly resolved        'accessibility-developer-tools': '~2.6.0' },
-39 silly resolved     devDependencies:
-39 silly resolved      { 'expect.js': '~0.2.0',
-39 silly resolved        chai: '~1.8.1',
-39 silly resolved        'chai-as-promised': '~4.1.0',
-39 silly resolved        jshint: '2.5.0',
-39 silly resolved        mocha: '1.21.4',
-39 silly resolved        cucumber: '~0.3.3',
-39 silly resolved        express: '~3.3.4',
-39 silly resolved        lodash: '~2.4.1',
-39 silly resolved        rimraf: '~2.2.6' },
-39 silly resolved     repository: { type: 'git', url: 'git://github.com/angular/protractor.git' },
-39 silly resolved     bin:
-39 silly resolved      { protractor: 'bin/protractor',
-39 silly resolved        'webdriver-manager': 'bin/webdriver-manager' },
-39 silly resolved     main: 'lib/protractor.js',
-39 silly resolved     scripts:
-39 silly resolved      { pretest: 'jshint lib spec scripts',
-39 silly resolved        test: 'node scripts/test.js',
-39 silly resolved        start: 'node testapp/scripts/web-server.js' },
-39 silly resolved     license: 'MIT',
-39 silly resolved     version: '2.0.0',
-39 silly resolved     gitHead: '1d8f14eb7e3fd7c8607ef1ffa2d6c0b29cc802b1',
-39 silly resolved     bugs: { url: 'https://github.com/angular/protractor/issues' },
-39 silly resolved     _id: 'protractor@2.0.0',
-39 silly resolved     _shasum: '2f96219bb4517006eaadd5757a06608630464ebc',
-39 silly resolved     _from: 'protractor@',
-39 silly resolved     _npmVersion: '1.4.28',
-39 silly resolved     _npmUser: { name: 'angularcore', email: 'angular-core+npm@google.com' },
-39 silly resolved     maintainers: [ [Object], [Object] ],
-39 silly resolved     dist:
-39 silly resolved      { shasum: '2f96219bb4517006eaadd5757a06608630464ebc',
-39 silly resolved        tarball: 'http://registry.npmjs.org/protractor/-/protractor-2.0.0.tgz' },
-39 silly resolved     directories: {},
-39 silly resolved     _resolved: 'https://registry.npmjs.org/protractor/-/protractor-2.0.0.tgz',
-39 silly resolved     readme: 'ERROR: No README data found!' } ]
-40 info install protractor@2.0.0 into /usr/local/lib
-41 info installOne protractor@2.0.0
-42 verbose lib/node_modules/protractor unbuild
-43 verbose tar unpack /Users/marcgregoire/.npm/protractor/2.0.0/package.tgz
-44 silly lockFile 1b04f987-ocal-lib-node-modules-protractor tar:///usr/local/lib/node_modules/protractor
-45 verbose lock tar:///usr/local/lib/node_modules/protractor /Users/marcgregoire/.npm/1b04f987-ocal-lib-node-modules-protractor.lock
-46 silly lockFile 53091e7c-npm-protractor-2-0-0-package-tgz tar:///Users/marcgregoire/.npm/protractor/2.0.0/package.tgz
-47 verbose lock tar:///Users/marcgregoire/.npm/protractor/2.0.0/package.tgz /Users/marcgregoire/.npm/53091e7c-npm-protractor-2-0-0-package-tgz.lock
-48 silly gunzTarPerm modes [ '755', '644' ]
-49 error Error: EACCES, mkdir '/usr/local/lib/node_modules/protractor'
-49 error  { [Error: EACCES, mkdir '/usr/local/lib/node_modules/protractor']
-49 error   errno: 3,
-49 error   code: 'EACCES',
-49 error   path: '/usr/local/lib/node_modules/protractor',
-49 error   fstream_type: 'Directory',
-49 error   fstream_path: '/usr/local/lib/node_modules/protractor',
-49 error   fstream_class: 'DirWriter',
-49 error   fstream_stack:
-49 error    [ '/usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23',
-49 error      '/usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53',
-49 error      'Object.oncomplete (fs.js:107:15)' ] }
-50 error Please try running this command again as root/Administrator.
-51 error System Darwin 14.3.0
-52 error command "node" "/usr/local/bin/npm" "install" "-g" "protractor"
-53 error cwd /Users/marcgregoire/Documents/AngularJs/PresentationAngular/Presentation-Industrialisation-FrontEnd
-54 error node -v v0.10.32
-55 error npm -v 1.4.28
-56 error path /usr/local/lib/node_modules/protractor
-57 error fstream_path /usr/local/lib/node_modules/protractor
-58 error fstream_type Directory
-59 error fstream_class DirWriter
-60 error code EACCES
-61 error errno 3
-62 error stack Error: EACCES, mkdir '/usr/local/lib/node_modules/protractor'
-63 error fstream_stack /usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23
-63 error fstream_stack /usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53
-63 error fstream_stack Object.oncomplete (fs.js:107:15)
-64 verbose exit [ 3, true ]
+4 warn package.json industrialisation@1.0.0 No repository field.
+5 warn package.json karma-phantomjs-launcher@0.1.4 No README data
+6 verbose readDependencies using package.json deps
+7 verbose cache add [ 'grunt-bower-remove', null ]
+8 verbose cache add name=undefined spec="grunt-bower-remove" args=["grunt-bower-remove",null]
+9 verbose parsed url { protocol: null,
+9 verbose parsed url   slashes: null,
+9 verbose parsed url   auth: null,
+9 verbose parsed url   host: null,
+9 verbose parsed url   port: null,
+9 verbose parsed url   hostname: null,
+9 verbose parsed url   hash: null,
+9 verbose parsed url   search: null,
+9 verbose parsed url   query: null,
+9 verbose parsed url   pathname: 'grunt-bower-remove',
+9 verbose parsed url   path: 'grunt-bower-remove',
+9 verbose parsed url   href: 'grunt-bower-remove' }
+10 silly lockFile fa323bb2-grunt-bower-remove grunt-bower-remove
+11 verbose lock grunt-bower-remove /Users/marcgregoire/.npm/fa323bb2-grunt-bower-remove.lock
+12 silly lockFile fa323bb2-grunt-bower-remove grunt-bower-remove
+13 silly lockFile fa323bb2-grunt-bower-remove grunt-bower-remove
+14 verbose addNamed [ 'grunt-bower-remove', '' ]
+15 verbose addNamed [ null, '*' ]
+16 silly lockFile afc66f1e-grunt-bower-remove grunt-bower-remove@
+17 verbose lock grunt-bower-remove@ /Users/marcgregoire/.npm/afc66f1e-grunt-bower-remove.lock
+18 silly addNameRange { name: 'grunt-bower-remove', range: '*', hasData: false }
+19 verbose request where is /grunt-bower-remove
+20 verbose request registry https://registry.npmjs.org/
+21 verbose request id f66aee50dcf513e7
+22 verbose url raw /grunt-bower-remove
+23 verbose url resolving [ 'https://registry.npmjs.org/', './grunt-bower-remove' ]
+24 verbose url resolved https://registry.npmjs.org/grunt-bower-remove
+25 verbose request where is https://registry.npmjs.org/grunt-bower-remove
+26 info trying registry request attempt 1 at 09:54:30
+27 http GET https://registry.npmjs.org/grunt-bower-remove
+28 http 404 https://registry.npmjs.org/grunt-bower-remove
+29 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+29 verbose headers   'content-type': 'application/json',
+29 verbose headers   'cache-control': 'max-age=0',
+29 verbose headers   'content-length': '51',
+29 verbose headers   'accept-ranges': 'bytes',
+29 verbose headers   date: 'Wed, 13 May 2015 07:54:30 GMT',
+29 verbose headers   via: '1.1 varnish',
+29 verbose headers   age: '0',
+29 verbose headers   connection: 'keep-alive',
+29 verbose headers   'x-served-by': 'cache-lcy1127-LCY',
+29 verbose headers   'x-cache': 'MISS',
+29 verbose headers   'x-cache-hits': '0',
+29 verbose headers   'x-timer': 'S1431503670.549968,VS0,VE172' }
+30 silly registry.get cb [ 404,
+30 silly registry.get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+30 silly registry.get     'content-type': 'application/json',
+30 silly registry.get     'cache-control': 'max-age=0',
+30 silly registry.get     'content-length': '51',
+30 silly registry.get     'accept-ranges': 'bytes',
+30 silly registry.get     date: 'Wed, 13 May 2015 07:54:30 GMT',
+30 silly registry.get     via: '1.1 varnish',
+30 silly registry.get     age: '0',
+30 silly registry.get     connection: 'keep-alive',
+30 silly registry.get     'x-served-by': 'cache-lcy1127-LCY',
+30 silly registry.get     'x-cache': 'MISS',
+30 silly registry.get     'x-cache-hits': '0',
+30 silly registry.get     'x-timer': 'S1431503670.549968,VS0,VE172' } ]
+31 silly lockFile afc66f1e-grunt-bower-remove grunt-bower-remove@
+32 silly lockFile afc66f1e-grunt-bower-remove grunt-bower-remove@
+33 error 404 404 Not Found: grunt-bower-remove
+33 error 404
+33 error 404 'grunt-bower-remove' is not in the npm registry.
+33 error 404 You should bug the author to publish it
+33 error 404 It was specified as a dependency of 'industrialisation'
+33 error 404
+33 error 404 Note that you can also install from a
+33 error 404 tarball, folder, or http url, or git url.
+34 error System Darwin 14.3.0
+35 error command "node" "/usr/local/bin/npm" "install" "grunt-bower-remove" "--save-dev"
+36 error cwd /Users/marcgregoire/Documents/AngularJs/PresentationAngular/Presentation-Industrialisation-FrontEnd
+37 error node -v v0.10.32
+38 error npm -v 1.4.28
+39 error code E404
+40 verbose exit [ 1, true ]

@@ -15,6 +15,7 @@ TodoList.controller('TodoListCtrl',['$scope',function($scope){
    };
 
    $scope.deleteTask=function(index){
+        if(!index && index!==0)return;
         $scope.listOfTasks.splice(index, 1);
    };
 

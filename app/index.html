@@ -10,7 +10,7 @@
 <body ng-app="mainApp">
 <div class="container head-content" ng-controller="TodoListCtrl">
 	<div class="row row-centered text-center default-height white">
-		<h5 ng-show="listOfTasks.length" ng-class="{'done-task':nbDoneTask===listOfTasks.length}">You have done {{nbDoneTask}} of your <span class="badge">{{listOfTasks.length}}</span> task<span ng-if="listOfTasks.length>1">s</span>.</h5>
+		<h5 ng-show="listOfTasks.length" ng-class="{'done-task':nbDoneTask===listOfTasks.length}" id="textTaskCount">You have done {{nbDoneTask}} of your <span class="badge">{{listOfTasks.length}}</span> task<span ng-if="listOfTasks.length>1">s</span>.</h5>
 	</div>
 
 	<div class="row row-centered">
@@ -31,12 +31,12 @@
 	</div>
 
 	<div class="row row-centered" ng-repeat="task in listOfTasks">
-		<div class="well" ng-class="{'task-done':task.done}">
+		<div class="well" id="tache{{$index}}" ng-class="{'task-done':task.done}">
 			<div class="checkbox checkbox-primary">
-				<label>
+				<label id="checkbox{{$index}}">
 					<input type="checkbox" ng-model="task.done"> {{task.text}}
 				</label>
-				<div class="task-right"><a ng-click="deleteTask($index)" class="pointer"><i class="red mdi-navigation-close"></i></a></div>
+				<div class="task-right"><a ng-click="deleteTask($index)" class="pointer" id="deleteTask{{$index}}"><i class="red mdi-navigation-close"></i></a></div>
 			</div>
 		</div>
 	</div>

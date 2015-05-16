@@ -2,6 +2,12 @@ module.exports = function(grunt) {
 
     var LIVERELOAD_PORT = 35729;
     grunt.initConfig({
+
+
+
+
+
+        // ---- LIVE RELOAD ------
         connect: {
             server: {
               options: {
@@ -21,23 +27,39 @@ module.exports = function(grunt) {
                 },
             },
         },
+
+
+        //------ TESTS KARMA
         karma: {
                     unit: {
                         configFile: 'karma.unit.js'
                     }
 
-                }
+                },
+
+        shell: {
+            e2e: { command: 'protractor protractor.conf.e2e.js'}
+        },
     });
 
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-connect');
     grunt.loadNpmTasks('grunt-karma');
+    grunt.loadNpmTasks('grunt-shell');
 
 
+    //--LIVE RELOAD ----
     grunt.registerTask('serve', [
         'connect',
         'watch:dev'
     ]);
 
+    //-- TESTS UNITAIRES ----
     grunt.registerTask('test-unit',['karma:unit']);
+
+    //-- TESTS E2E
+    grunt.registerTask('test-e2e',[
+        'connect',
+        'shell:e2e'
+    ]);
 };
