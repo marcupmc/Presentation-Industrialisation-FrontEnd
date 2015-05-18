@@ -7,13 +7,26 @@
 
 #Comment installer le projet ?
 
-Prérequis : 
-Avoir NodeJS 
-Si vous n'avez pas Node -> http://nodejs.com
+####Prérequis : 
+Avoir NodeJS. Si vous n'avez pas Node -> https://nodejs.org/
 
-git clone le projet
+####Importer le projet
 
-npm install pour récupérer les packages node nécessaires
+```
+git clone https://github.com/marcupmc/Presentation-Industrialisation-FrontEnd.git
+```
+
+####Recupérer les packages nodes nécessaires :
+
+```
+npm install 
+```
+
+#####Installer les librairies JS nécessaires :
+
+```
+bower install
+```
 
 #Les différentes tâches Grunt
 
