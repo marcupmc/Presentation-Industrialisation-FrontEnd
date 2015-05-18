@@ -22,7 +22,7 @@ git clone https://github.com/marcupmc/Presentation-Industrialisation-FrontEnd.gi
 npm install 
 ```
 
-#####Installer les librairies JS nécessaires :
+####Installer les librairies JS nécessaires :
 
 ```
 bower install
@@ -30,10 +30,32 @@ bower install
 
 #Les différentes tâches Grunt
 
-LiveReload (pratique pour le dev)
+####LiveReload (pratique pour le dev)
 
-Lancer les tests unitaires
+```
+grunt serve 
+```
 
-Lancer les tests d'intégration
+####Lancer les tests unitaires
 
-Lancer les test e2e
+```
+grunt test-unit
+```
+
+####Lancer les tests d'intégration
+
+//TODO
+
+####Lancer les test e2e
+
+Dans un terminal :
+
+```
+webdriver-manager start
+```
+
+Puis dans un autre terminal :
+
+```
+grunt test-e2e
+```
