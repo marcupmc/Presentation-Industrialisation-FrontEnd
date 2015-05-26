@@ -6,22 +6,13 @@ module.exports = function(grunt) {
 
     //---DEMO
     //------- CONCAT -----------
-        concat: {
-            app: {
-                     src: ['app/**/*.js'],
-                     dest: 'dist/app.js',
-                 }
-        },
+      
+
+      
 
     //---DEMO
     //------- UGLIFY -----------
-        uglify: {
-            build: {
-                  files: {
-                    'dist/app.min.js': ['dist/app.js']
-                  }
-            }
-        },
+   
 
 
 
@@ -66,14 +57,10 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-connect');
     grunt.loadNpmTasks('grunt-karma');
     grunt.loadNpmTasks('grunt-shell');
-    grunt.loadNpmTasks('grunt-contrib-concat');
-    grunt.loadNpmTasks('grunt-contrib-uglify');
+   
 
     //--BUILD ------------
-    grunt.registerTask('build',[
-            'concat:app',
-            'uglify:build'
-        ]);
+    
 
 
     //--LIVE RELOAD ----
